@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alesandro Diogo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/all.css">
+    <script src="./js/jQuery.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            content: [
+     "index.html",
+        "./index.html",
+        "./**/*.js",
+                ],
+          theme: {
+            extend: {
+                colors:{
+        secundary:{
+          100: '#536976',
+          200: '#292E49',
+          300: '#24263B',
+          400: '#24263B',
+          500: '#C2543E',
+          600: '#ff5823',
+        },
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }}
+      </script>
+</head>
+<body>
+    <nav class="menu flex justify-center p-3 flex-wrap fixed top-0 left-0 right-0 bg-gradient-to-r from-secundary-400 to-secundary-400 z-20">
+        <div class="lg:flex">
+            <div>
+                <button class="text-white inline-flex p-3 rounded lg:hidden ml-auto nav-toggler" data-target="#navigation">
+                    <i class="fa-solid fa-bars cursor-pointer text-white text-2xl hover:text-secundary-500"></i>
+                </button>
+                <a href="index.html"><span class="text-white text-2xl sm:text-3xl lg:text-4xl" style="font-family: Poppins Bold;">
+                        ALESANDRO
+                    </span></a>
+            </div>
+            <div class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto" id="navigation">
+                <div class="lg:inline-flex lg:flex-row lg:ml-auto flex flex-col" style="font-family: Poppins SemiBold;">
+                    <a href="#home" class="lg:inline-flex lg:w-auto text-sm text-secundary-500 px-3 py-3 hover:text-secundary-500">Home</a>
+                    <a href="#sobre" class="lg:inline-flex lg:w-auto text-sm px-3 py-3 text-white hover:text-secundary-500">Sobre mim</a>
+                    <a href="#portfolio" class="lg:inline-flex lg:w-auto text-sm px-3 py-3 text-white hover:text-secundary-500">Portfolio</a>
+                    <a href="#contacte-me" class="lg:inline-flex lg:w-auto text-sm px-3 py-3 text-white hover:text-secundary-500">Contacte-me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="pt-16 w-full h-screen bg-secundary-400" id="home">
+        <div class="my-info m-8 flex justify-center space-x-20 " style="align-items: center;">
+            <div class="texto justify-center space-y-3">
+                <div class="mt-6 text-white space-x-2">
+                    <a href="https://www.facebook.com/alesandromendes.diogo" target="blank"><i class="fa-brands fa-facebook hover:text-secundary-500"></i></a>
+                    <a href="https://www.instagram.com/alesandrodiogo" target="blank"><i class="fa-brands fa-instagram hover:text-secundary-500"></i></a>
+                    <a href="https://www.linkedin.com/in/alesandrodiogo" target="blank"><i class="fa-brands fa-linkedin hover:text-secundary-500"></i></a>
+                    <a href="https://www.twitter.com/alesandrodiogo2" target="blank"><i class="fa-brands fa-twitter hover:text-secundary-500"></i></a>
+                </div>
+                <div class="about-me text-white">
+                    <h1>Olá, eu sou <span class="text-secundary-500 scroll">Alesandro</span></h1>
+                    <h1 class="text-3xl" style="font-family: Poppins Light;">FullStack Developer</h1>
+                    <p style="font-family: Poppins Thin;">Software Developer and IT suporte.</p>
+                </div>
+                <div class="botoes mt-6 space-x-2">
+                    <a href="mailto:alesandromendesdiogo24@gmail.com" class="btn-1 px-2 py-2 focus:outline-none">Contrate-me</a>
+                    <a href="./upload/CV_AlesandroDeveloper.pdf" download="curriculum_Alesandro" class="btn-2 px-2 py-2 focus:outline-none">Obter currículo</a>
+                </div>
+            </div>
+            <div class="my-photo">
+                <img src="./img/me1.jpeg" alt="Foto de capa" class="mx-auto me1 rounded-full object-cover" style="border: 1px solid #fff; padding:5px;">
+            </div>
+        </div>
+        <div class="shape w-full" style="position: absolute; bottom: 0; left: 0;">
+            <img src="./img/shape-bg.png" alt="shape-bg" class="object-fill img-shape">
+        </div>
+    </div>
+    <!-- Sobre mim -->
+    <div class="content-sobre bg-white w-full h-screen flex items-center flex-col" id="sobre">
+        <div class="sobre-mim flex justify-center">
+            <div class="flex-col space-y-2">
+                <h1 class="text-2xl pl-12 scroll" style="font-family: Poppins Bold;">Sobre Mim</h1>
+                <p class="text-gray-600 pl-8" style="font-family: Poppins Medium;">Porquê escolher-me?</p>
+                <div class="bg-gray-500 w-60 h-1 rounded-sm flex justify-center relative">
+                    <div class="w-12 h-1.5 shadow-md rounded-sm absolute -top-px" style="background-color: #ff5823;"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="sobre-responsivo bg-white mt-6 shadow-2xl border-gray-400 flex rounded-md">
+            <img src="./img/me2.jpeg" alt="Alesandro Diogo" class="me2 object-fill rounded-l-md">
+            <div class="texto-sobre-mim break-words mt-4 text-gray-600 pl-6" style="font-family: Poppins Light;">
+                <p class="break-words">
+                    Desenvolvedor Full stack web com conhecimentos em backend, frontend e banco de dados,
+                    possuo conhecimento básico em desenvolvimento desktop em C# e Java SE, e também tenho noções
+                    de desenvolvimento low-code com Outsystems e Glide App.
+                </p>
+                <h1 class="mt-6 titulo" style="font-family: Poppins SemiBold;">Algumas Habilidades de Programação</h1>
+                <ul class="mt-2">
+                    <li><span style="color: #ff5823;">&#10022</span> PHP / Laravel</li>
+                    <li><span style="color: #ff5823;">&#10022</span> Java</li>
+                    <li><span style="color: #ff5823;">&#10022</span> .Net / C#</li>
+                    <li><span style="color: #ff5823;">&#10022</span> ASP.NET Core</li>
+                    <li><span style="color: #ff5823;">&#10022</span> HTML e CSS</li>
+                    <li><span style="color: #ff5823;">&#10022</span> Node.js / Express</li>
+                    <li><span style="color: #ff5823;">&#10022</span> JavaScript</li>
+                    <li><span style="color: #ff5823;">&#10022</span> MySql / PostgreSql</li>
+                </ul>
+                <div class="botoes mt-4 space-x-2 flex justify-center">
+                    <a href="mailto:alesandromendesdiogo24@gmail.com" class="btn-1 px-2 py-2 focus:outline-none">Contrate-me</a>
+                    <a href="./upload/CV_AlesandroDeveloper.pdf" download="curriculum_Alesandro" class="btn-2 px-2 py-2 focus:outline-none">Obter currículo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Sobre mim -->
+    
+    <!-- Portfolio -->
+    <div class="content-portfolio bg-white w-full h-screen flex items-center flex-col" id="portfolio">
+        <div class="sobre-mim flex justify-center">
+            <div class="flex-col space-y-2">
+                <h1 class="text-2xl pl-12 scroll" style="font-family: Poppins Bold;">Portfólio</h1>
+                <p class="text-gray-600 pl-8" style="font-family: Poppins Medium;">Projectos desenvolvidos</p>
+                <div class="bg-gray-500 w-60 h-1 rounded-sm flex justify-center relative">
+                    <div class="w-12 h-1.5 shadow-md rounded-sm absolute -top-px" style="background-color: #ff5823;"></div>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="bg-white mt-6 shadow-2xl border-gray-400 ">
+        <!--Card-->
+        <div class="grid-cols-1 sm:grid md:grid-cols-3 mb-4">
+            <!--INICIO CARD1--><div
+              class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+              <a href="./projects/acadefit_slide.html" target="_blank">
+                <img
+                  class="rounded-t-lg"
+                  src="./img/acadefit/01.png"
+                  alt="Hollywood Sign on The Hill" />
+              </a>
+              <div class="p-6">
+                <h5
+                  class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                  AcadefitPro
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  Aplicação web para gestão de academia fitness, com funções principais de avaliação física e controle de pagamentos. Projecto comercial.
+                </p>
+              </div>
+            </div><!--FIM CARD1-->
+            <!--INICIO CARD2--><div
+              class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+              <a href="./projects/cursoonline_slide.html" target="_blank">
+                <img
+                  class="rounded-t-lg"
+                  src="./img/Ramossoft/cardcurso.png"
+                  alt="Palm Springs Road" />
+              </a>
+              <div class="p-6">
+                <h5
+                  class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                  Curso online
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  Centro de formação online Ramossoft, com as funcionalidades de ver vídeos online e fazer o download dos materiais. Projecto académico.
+                </p>
+              </div>
+            </div><!--FIM CARD2-->
+           <!--INICIO CARD3--> <div
+              class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+              <a href="./projects/maiombe_slide.html" target="_blank">
+                <img
+                  class="rounded-t-lg"
+                  src="./img/Maiombe/gest1.PNG"
+                  alt="Skyscrapers" />
+              </a>
+              <div class="p-6">
+                <h5
+                  class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                  Maiombe-SIGE
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  Sistema Integrado de Gestão Escolar, com módulos de gestão escolar, gestão administrativa, finanças, recursos humanos, Biblioteca, etc. Projecto comercial.
+                </p>
+              </div>
+            </div><!--FIM CARD3-->
+            <!--INICIO CARD4--><div
+              class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+              <a href="./projects/boda_slide.html" target="_blank">
+                <img
+                  class="rounded-t-lg"
+                  src="./img/Boda/4.JPG"
+                  alt="Los Angeles Skyscrapers" />
+              </a>
+              <div class="p-6">
+                <h5
+                  class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                  Boda
+                </h5>
+                <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                  Marketplace online para compra de bens e serviços para festas, nesta plataforma as pessoas podem comprar e vender os seus produtos e bens. Projecto pessoal.
+                </p>
+              </div>
+            </div><!--FIM CARD4-->
+             <!--INICIO CARD5--><div
+             class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+             <a href="./projects/cardapio_slide.html" target="_blank">
+               <img
+                 class="rounded-t-lg"
+                 src="./img/Cardapio/image1.PNG"
+                 alt="Los Angeles Skyscrapers" />
+             </a>
+             <div class="p-6">
+               <h5
+                 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                 Cardápio online
+               </h5>
+               <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                Aplicação web para restaurantes, o cliente poderá ver o menu, prato do dia, reservar uma mesa e fazer encomenda . Projecto pessoal.
+               </p>
+             </div>
+           </div><!--FIM CARD5-->
+            <!--INICIO CARD6--><div
+            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+            <a href="https://github.com/matheusbattisti/curso_laravel" target="_blank">
+              <img
+                class="rounded-t-lg"
+                src="./img/hdceventos.PNG"
+                alt="Los Angeles Skyscrapers" />
+            </a>
+            <div class="p-6">
+              <h5
+                class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                HDC Events
+              </h5>
+              <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                Projecto desenvolvido durante o curso de Laravel de Matheus Battisti, este site é para criar e ver eventos. Projecto de aprendizado.
+              </p>
+            </div>
+          </div><!--FIM CARD6-->
+          </div>
+        <!--Card fim-->
+
+    </div>
+    <!-- Fim Portfolio -->
+    
+    <!-- Contacte-me -->
+    
+    <div class="content-contacto  bg-white w-full h-screen flex items-center flex-col" id="contacte-me">
+        <div class="contacte-me flex justify-center">
+            <div class="flex-col space-y-2">
+                <h1 class="text-2xl pl-12 scroll" style="font-family: Poppins Bold;">Contacte-Me</h1>
+                <p class="text-gray-600 pl-8" style="font-family: Poppins Medium;">Vamos manter contacto</p>
+                <div class="bg-gray-500 w-60 h-1 rounded-sm flex justify-center relative">
+                    <div class="w-12 h-1.5 shadow-md rounded-sm absolute -top-px" style="background-color: #ff5823;"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="contacto-responsivo bg-secundary-400 rounded-md mt-6 shadow-2xl border-gray-400 flex">
+            <div class="text-white">
+                <h1 class="mt-4 pl-8" style="font-family: Poppins Bold;">Entrar em contacto <i class="fa-solid fa-envelope"></i></h1>
+                <div class="mt-4 text-white space-x-2 pl-8">
+                    <a href="https://www.facebook.com/alesandromendes.diogo" target="blank"><i class="fa-brands fa-facebook hover:text-secundary-500"></i></a>
+                    <a href="https://www.instagram.com/alesandrodiogo" target="blank"><i class="fa-brands fa-instagram hover:text-secundary-500"></i></a>
+                    <a href="https://www.linkedin.com/in/alesandrodiogo" target="blank"><i class="fa-brands fa-linkedin hover:text-secundary-500"></i></a>
+                    <a href="https://www.twitter.com/alesandrodiogo2" target="blank"><i class="fa-brands fa-twitter hover:text-secundary-500"></i></a>
+                </div>
+                <p class="text-gray-400 pl-2 mt-12">Envia o seu email aqui!</p>
+                <img src="./img/mailz.jpeg" alt="Contact email" class="contact-img">
+            </div>
+            <div class="flex items-center">
+                <div class="form-contact bg-gray-100 rounded-md">
+                    <form action="/sendmail" method="get" class="pl-2 flex flex-col space-y-2">
+                        <label for="name" class="text-gray-700">Nome</label>
+                        <input type="text" name="name" id="name" class="rounded-md focus:outline-gray-300 bg-gray-200 text-gray-600 pl-2" style="font-family: Poppins Regular;" required>
+                        <label for="email" class="text-gray-700">Email</label>
+                        <input type="email" name="email" id="email" class="rounded-md focus:outline-gray-300 bg-gray-200 text-gray-600 pl-2" style="font-family: Poppins Regular;" required>
+                        <label for="message" class="text-gray-700">Mensagem</label>
+                        <textarea name="message" required id="message" class="rounded-md focus:outline-gray-300 bg-gray-200 text-gray-600 " style="font-family: Poppins Regular;">
+                        </textarea>
+                        <button type="submit" disabled class="btn-1 px-2 py-2 focus:outline-none w-24 bg-secundary-400">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-200 w-full h-10 flex items-center justify-center space-x-3 text-gray-700" style="font-family: Poppins Light; margin-top: 200px;">
+        <p>Copyright &copy; 2022.</p>
+        <p>Made by Alesandro Diogo</p>
+    </div>
+    <!-- Fim Contacte-me -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
